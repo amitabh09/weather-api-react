@@ -8,7 +8,7 @@ export default function Weather1() {
     
     useEffect(()=>{
         const fetchApi = async()=>{
-            const url=`http://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=${x}`;
+            const url=`https://api.openweathermap.org/data/2.5/weather?q=${search}&units=metric&appid=${x}`;
             const response= await fetch(url);
             const resJson= await response.json();
             //console.log(resJson);
