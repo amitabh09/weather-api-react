@@ -30,11 +30,12 @@ export default function Weather1() {
         value={search}/>
         <br/>
       </div>
-      { !city ? (<div className="container-sm cnt3">No Data Found <br /> ! Make Sure That Spelling is Coorect</div>):(
+      { !city ? (<div className="container-sm cnt3">No Data Found <br /> ! Make Sure That Spelling is Correct</div>):(
         <div className="container-sm cnt2">
             <br/>
             <h2 className='cnt12'>{search}</h2>
             <h3 className='cnt12'>Temperature : {city.temp} Degrees</h3>
+            <h3 className='cnt12'>Feels Like : {city.feels_like} Degrees</h3>
             <h3 className='cnt12'>Humidity : {city.humidity} % </h3>
             <h3 className='cnt12'>Wind Speed : {air.speed} km/hr </h3>
             <br/>
